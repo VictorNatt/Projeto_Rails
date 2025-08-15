@@ -1,0 +1,138 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #282828;
+  color: #dcdcdc; 
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.card {
+  background: #373737;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  max-width: 500px;
+  margin: 0 auto 30px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #646464;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  background: #464646;
+  color: #dcdcdc;
+}
+
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #b4b4b4;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #787878;
+  box-shadow: 0 0 0 3px rgba(120,120,120,0.2);
+}
+
+input[type="submit"] {
+  padding: 12px;
+  background: #787878;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-right: 8px;
+}
+
+input[type="submit"]:hover {
+  background: #5a5a5a;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+a {
+  padding: 12px;
+  background: #a00; 
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  background: #800;
+}
+.post {
+  background-color: #373737;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+.post h2 {
+  margin-top: 0;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.post p {
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.post .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.post a {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.post a.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.post a.delete:hover {
+  background-color: #a71d2a;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 15px;
+  }
+
+  input[type="submit"], a {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}
